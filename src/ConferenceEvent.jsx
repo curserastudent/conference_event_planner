@@ -154,16 +154,16 @@ const mealsTotalCost = calculateTotalCost("meals");
     return (
         <>
             <navbar className="navbar_event_conference">
-                <div className="company_logo">Conference Expense Planner</div>
+                <div className="company_logo">Conference</div>
                 <div className="left_navbar">
                     <div className="nav_links">
                         <a href="#venue" onClick={() => navigateToProducts("#venue")} >Venue</a>
                         <a href="#addons" onClick={() => navigateToProducts('#addons')}>Add-ons</a>
                         <a href="#meals" onClick={() => navigateToProducts('#meals')}>Meals</a>
+                        <button className="details_button" onClick={() => setShowItems(!showItems)}>
+                            Show Details
+                        </button>
                     </div>
-                    <button className="details_button" onClick={() => setShowItems(!showItems)}>
-                        Show Details
-                    </button>
                 </div>
             </navbar>
             <div className="main_container">
